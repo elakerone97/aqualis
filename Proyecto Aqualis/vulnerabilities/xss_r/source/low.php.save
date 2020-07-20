@@ -1,0 +1,18 @@
+<?php
+
+header ("X-XSS-Protection: 0");
+
+// Is there any input?
+if( array_key_exists( "name", $_GET = NULL ) {
+	// Feedback for end user
+	$ole=$_GET[ 'name' ];
+	if ($ole != ''){
+		$html .= '<pre>oooo</pre>';
+		//$html .= '<pre>¡Recibido! Muchas gracias por tus comentarios, ' . $_GET[ 'name' ] . '</pre>';
+
+	} else if ($ole == ''){
+		$html .= '<pre>¡Recibido! Muchas gracias por tus comentarios</pre>';
+	}
+}
+
+?>
